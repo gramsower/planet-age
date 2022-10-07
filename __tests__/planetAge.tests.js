@@ -6,5 +6,9 @@ describe('Age', () => {
     expect(age.ageEarth).toEqual(37);
     expect(age.earthLife).toEqual(80);
   });
-})
 
+  test("should return the correct age for the user, calculated according to Mercury's year length", () => {
+    let age = new Age(37, 80);
+    expect(age.ageMerc).toEqual(154);
+    });
+  });

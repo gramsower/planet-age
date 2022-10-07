@@ -7,7 +7,8 @@ export default class Age {
     this.ageMars = 0;
     this.ageJup = 0;
   };
+
+mercuryAge() {
+  
+  }
 };
-
-
-
