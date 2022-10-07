@@ -21,7 +21,7 @@ describe('Age', () => {
 
   test("should return the user's Mars age", () => {
     age.marsAge();
-    expect(age.ageMars).toEqual(37)
+    expect(age.ageMars).toEqual(19)
   });
 
 
