@@ -1,3 +1,4 @@
+import { createHtmlTagObject } from 'html-webpack-plugin';
 import Age from './../src/planetAge.js'
 
 describe('Age', () => {
@@ -7,8 +8,9 @@ describe('Age', () => {
     expect(age.earthLife).toEqual(80);
   });
 
-  test("should return the correct age for the user, calculated according to Mercury's year length", () => {
+  test("should return the user's age calculated according to Mercury's year length", () => {
     let age = new Age(37, 80);
+    age.mercAge();
     expect(age.ageMerc).toEqual(154);
     });
   });

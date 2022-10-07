@@ -8,7 +8,7 @@ export default class Age {
     this.ageJup = 0;
   };
 
-mercuryAge() {
-  
+mercAge() {
+  this.ageMerc = parseInt(this.ageEarth/.24)
   }
 };
