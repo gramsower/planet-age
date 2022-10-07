@@ -9,17 +9,18 @@ export default class Age {
   };
 
   mercAge() {
-    this.ageMerc = parseInt(this.ageEarth/.24)
+    this.ageMerc = parseInt(this.ageEarth/.24);
   };
 
   venAge() {
-    this.ageVen = parseInt(this.ageEarth/.62)    
+    this.ageVen = parseInt(this.ageEarth/.62);
   };
 
   marsAge() {
-   this.ageMars = parseInt(this.ageEarth/1.88)
+   this.ageMars = parseInt(this.ageEarth/1.88);
   };
 
   jupAge() {
+    this.ageJup = parseInt(this.ageEarth/11.86);
   };
 }
