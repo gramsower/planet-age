@@ -19,10 +19,10 @@ describe('Age', () => {
     expect(age.ageVen).toEqual(59)
   });
 
-  //test("should return the user's Mars age", () => {
-    //age.marsAge();
-    //expect(age.ageMars).toEqual(0)
-  // });
+  test("should return the user's Mars age", () => {
+    age.marsAge();
+    expect(age.ageMars).toEqual(37)
+  });
 
 
 
