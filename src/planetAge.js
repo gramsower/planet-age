@@ -13,7 +13,7 @@ export default class Age {
   };
 
   venAge() {
-    this.ageVen = parseInt(this.ageEarth/.62)    
+    gothis.ageVen = parseInt(this.ageEarth/.62)    
   };
 
   // marsAge() {
