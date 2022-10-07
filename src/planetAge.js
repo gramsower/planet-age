@@ -8,7 +8,15 @@ export default class Age {
     this.ageJup = 0;
   };
 
-mercAge() {
-  this.ageMerc = parseInt(this.ageEarth/.24)
-  }
-};
+  mercAge() {
+    this.ageMerc = parseInt(this.ageEarth/.24)
+  };
+
+  venAge() {
+    this.ageVen = parseInt(this.ageEarth/.62)    
+  };
+
+  // marsAge() {
+  
+  // };
+}
