@@ -18,26 +18,33 @@ describe('Age', () => {
     expect(age.ageMerc).toEqual(154);
   });
 
-  test("should calculate the user's equivalent life expectancy on Mercury, and return the remaining years of the user's life", () => {
-    age.mercAge();
-    expect(age.mercLife).toEqual(333);
-    expect(age.remainMercLife).toEqual(179);
-  });
+  // test("should calculate the user's equivalent life expectancy on Mercury, and return the remaining years of the user's life in Mercury years", () => {
+  //   age.mercAge();
+  //   expect(age.mercLife).toEqual(333);
+  //   expect(age.remainMercLife).toEqual(179);
+  // });
     
 
-  // test("should return the user's Venus age", () => {
-  //   age.venAge();
-  //   expect(age.ageVen).toEqual(59)
+  test("should return the user's Venus age", () => {
+    age.venAge();
+    expect(age.ageVen).toEqual(59);
+
+  });
+
+  // test("should calculate the user's equivalent life expectancy on Venus, and return the remaining years of the user's life in Venus years", () => {
+  //   age.mercAge();
+  //   expect(age.mercLife).toEqual(333);
+  //   expect(age.remainMercLife).toEqual(179);
   // });
 
-  // test("should return the user's Mars age", () => {
-  //   age.marsAge();
-  //   expect(age.ageMars).toEqual(19)
-  // });
+  test("should return the user's Mars age", () => {
+    age.marsAge();
+    expect(age.ageMars).toEqual(19)
+  });
 
-  // test("should return the user's Jupiter age", () => {
-  //   age.jupAge();
-  //   expect(age.ageJup).toEqual(3);
-  // });
+  test("should return the user's Jupiter age", () => {
+    age.jupAge();
+    expect(age.ageJup).toEqual(3);
+  });
 
 });
