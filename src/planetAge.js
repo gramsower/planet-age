@@ -19,4 +19,7 @@ export default class Age {
   marsAge() {
    this.ageMars = parseInt(this.ageEarth/1.88)
   };
+
+  jupAge() {
+  };
 }

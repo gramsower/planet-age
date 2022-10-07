@@ -24,6 +24,9 @@ describe('Age', () => {
     expect(age.ageMars).toEqual(19)
   });
 
-
+  test("should return the user's Jupiterage", () => {
+    age.jupAge();
+    expect(age.ageJup).toEqual(1);
+  });
 
 });
