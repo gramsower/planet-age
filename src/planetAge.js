@@ -28,15 +28,19 @@ export default class Age {
 
   venAge() {
     this.ageVen = parseInt(this.ageEarth/.62);
+    this.venLife = parseInt(this.earthLife/.62);
+    this.remainVenLife = parseInt(this.venLife - this.ageVen);
   };
 
   marsAge() {
    this.ageMars = parseInt(this.ageEarth/1.88);
+   this.marsLife = parseInt(this.earthLife/1.88);
+   this.remainMarsLife = parseInt(this.marsLife - this.ageMars);
   };
 
   jupAge() {
     this.ageJup = parseInt(this.ageEarth/11.86);
+    this.jupLife = parseInt(this.earthLife/11.86);
+    this.remainJupLife = parseInt(this.jupLife - this.ageJup);
   };
-
-
 }

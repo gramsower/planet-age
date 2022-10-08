@@ -54,9 +54,8 @@ describe('Age', () => {
   });
 
   test("should calculate the user's equivalent life expectancy on Jupiter, and return the remaining years of the user's life in Jupiter years", () => {
-    age.mercAge();
+    age.jupAge();
     expect(age.jupLife).toEqual(6);
     expect(age.remainJupLife).toEqual(3);
   });
-
 });
