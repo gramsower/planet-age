@@ -7,26 +7,27 @@
 ## Technologies Used
 
 * Javascript
+* HTML
 * Lint
 * Webpack
 * CSS
-* 
+* npm
 
 ## The user inputs their date of birth into the form.  The program then calculates the user's current earth-age. Then, the program calculates the user's age as if they lived on Mercury, Venus, Mars & Jupiter.
 
 ## The program also calculates the user's life expectancy based upon input from the user, and returns the user's remaining life expectency on Mercury, Venus, Mars & Jupiter.
 
+## If the user has lived longer than their life expectancy, the page will return the number of years they have lived beyond the expectancy.
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* This program does not currently have a user interface.
+* 
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* Does not yet return the amount by which a user has outlived
+* their life expectancy; this will be added shortly.
 
 ## MIT License 

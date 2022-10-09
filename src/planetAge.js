@@ -24,6 +24,7 @@ export default class Age {
     this.ageMerc = parseInt(this.ageEarth/.24);
     this.mercLife = parseInt(this.earthLife/.24);
     this.remainMercLife = parseInt(this.mercLife - this.ageMerc);
+    // if (this.remainMercLife > 0)
   };
 
   venAge() {
