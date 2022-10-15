@@ -25,11 +25,11 @@ export default class Age {
   mercAge() {
     this.ageMerc = parseInt(this.ageEarth/.24);
     this.mercLife = parseInt(this.earthLife/.24);
-    //if (this.ageMarc >= this.mercLife) {
-    //  this.overMercLife = Math.abs(this.mercLife - this.ageMerc);
-    //} else {
-    //  this.remainMercLife = (this.mercLife - this.ageMerc)
-   // };
+    if (this.ageMerc >= this.mercLife) {
+      this.overMercLife = Math.abs(this.mercLife - this.ageMerc);
+    } else {
+      this.remainMercLife = (this.mercLife - this.ageMerc)
+    };
   };
 
   venAge() {
