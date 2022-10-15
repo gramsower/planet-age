@@ -12,14 +12,17 @@ export default class Age {
     this.ageVen = 0;
     this.venLife = 0;
     this.remainVenLife = 0;
+    this.overVenLife = 0;
 
     this.ageMars = 0;
     this.marsLife = 0;
     this.remainMarsLife = 0;
+    this.overMarsLife = 0;
 
     this.ageJup = 0;
     this.jupLife = 0;
     this.remainJupLife = 0;
+    this.overJupLife = 0;
   };
 
   mercAge() {
@@ -35,18 +38,29 @@ export default class Age {
   venAge() {
     this.ageVen = parseInt(this.ageEarth/.62);
     this.venLife = parseInt(this.earthLife/.62);
-    this.remainVenLife = Math.abs(this.venLife - this.ageVen);
+    if (this.ageVen >= this.venLife) {
+      this.overVenLife = Math.abs(this.venLife - this.ageVen);
+    } else {
+      this.remainVenLife = (this.venLife - this.ageVen)
+    };
   };
-
   marsAge() {
    this.ageMars = parseInt(this.ageEarth/1.88);
    this.marsLife = parseInt(this.earthLife/1.88);
-   this.remainMarsLife = Math.abs(this.marsLife - this.ageMars);
+   if (this.ageMars >= this.marsLife) {
+    this.overMarsLife = Math.abs(this.marsLife - this.ageMars);
+  } else {
+    this.remainMarsLife = (this.marsLife - this.ageMars)
   };
+};
 
   jupAge() {
     this.ageJup = parseInt(this.ageEarth/11.86);
     this.jupLife = parseInt(this.earthLife/11.86);
-    this.remainJupLife = Math.abs(parseInt(this.jupLife - this.ageJup));
+    if (this.ageJup >= this.jupLife) {
+      this.overJupLife = Math.abs(this.jupLife - this.ageJup);
+    } else {
+      this.remainJupLife = (this.jupLife - this.ageJup)
+    };
   };
 }

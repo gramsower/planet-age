@@ -24,7 +24,7 @@ describe('Age', () => {
      expect(age.remainMercLife).toEqual(179);
    });
     
-  test("should return the amount by which a user has outlived their life expectancy, if their age is greater than their life expectancy", () => {
+  test("should return the amount by which a user has outlived their life expectancy in Mercury years, if their age is greater than their life expectancy", () => {
     let age = new Age(87, 80);
     age.mercAge();
     expect(age.overMercLife).toEqual(29);
@@ -33,7 +33,6 @@ describe('Age', () => {
   test("should return the user's Venus age", () => {
     age.venAge();
     expect(age.ageVen).toEqual(59);
-
   });
 
   test("should calculate the user's equivalent life expectancy on Venus, and return the remaining years of the user's life in Venus years", () => {
@@ -41,6 +40,12 @@ describe('Age', () => {
      expect(age.venLife).toEqual(129);
      expect(age.remainVenLife).toEqual(70);
    });
+
+  test("should return the amount by which a user has outlived their life expectancy in Venus years, if their age is greater than their life expectancy", () => {
+    let age = new Age(87, 80);
+    age.venAge();
+    expect(age.overVenLife).toEqual(11);
+  });
 
   test("should return the user's Mars age", () => {
     age.marsAge();
@@ -53,6 +58,12 @@ describe('Age', () => {
     expect(age.remainMarsLife).toEqual(23);
   });
 
+  test("should return the amount by which a user has outlived their life expectancy in Mars years, if their age is greater than their life expectancy", () => {
+    let age = new Age(87, 80);
+    age.marsAge();
+    expect(age.overMarsLife).toEqual(4);
+  });
+
   test("should return the user's Jupiter age", () => {
     age.jupAge();
     expect(age.ageJup).toEqual(3);
@@ -62,5 +73,11 @@ describe('Age', () => {
     age.jupAge();
     expect(age.jupLife).toEqual(6);
     expect(age.remainJupLife).toEqual(3);
+  });
+
+  test("should return the amount by which a user has outlived their life expectancy in Jupiter years, if their age is greater than their life expectancy", () => {
+    let age = new Age(87, 80);
+    age.jupAge();
+    expect(age.overJupLife).toEqual(1);
   });
 });
