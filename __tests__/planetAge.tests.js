@@ -24,6 +24,11 @@ describe('Age', () => {
      expect(age.remainMercLife).toEqual(179);
    });
     
+  test("should return the amount by which a user has outlived their life expectency, if their age is greater than their expected life expectancy", () => {
+    let age = new Age(87, 80);
+    age.mercAge();
+    expect(age.overMercLife).toEqual(7);
+  });
 
   test("should return the user's Venus age", () => {
     age.venAge();
